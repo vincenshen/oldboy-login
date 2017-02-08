@@ -1,0 +1,44 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title></title>
+<style id="system" type="text/css">h1,h2,h3,h4,h5,h6,p,blockquote {    margin: 0;    padding: 0;}body {    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;    font-size: 13px;    line-height: 18px;    color: #737373;    margin: 10px 13px 10px 13px;}a {    color: #0069d6;}a:hover {    color: #0050a3;    text-decoration: none;}a img {    border: none;}p {    margin-bottom: 9px;}h1,h2,h3,h4,h5,h6 {    color: #404040;    line-height: 36px;}h1 {    margin-bottom: 18px;    font-size: 30px;}h2 {    font-size: 24px;}h3 {    font-size: 18px;}h4 {    font-size: 16px;}h5 {    font-size: 14px;}h6 {    font-size: 13px;}hr {    margin: 0 0 19px;    border: 0;    border-bottom: 1px solid #ccc;}blockquote {    padding: 13px 13px 21px 15px;    margin-bottom: 18px;    font-family:georgia,serif;    font-style: italic;}blockquote:before {    content:"C";    font-size:40px;    margin-left:-10px;    font-family:georgia,serif;    color:#eee;}blockquote p {    font-size: 14px;    font-weight: 300;    line-height: 18px;    margin-bottom: 0;    font-style: italic;}code, pre {    font-family: Monaco, Andale Mono, Courier New, monospace;}code {    background-color: #fee9cc;    color: rgba(0, 0, 0, 0.75);    padding: 1px 3px;    font-size: 12px;    -webkit-border-radius: 3px;    -moz-border-radius: 3px;    border-radius: 3px;}pre {    display: block;    padding: 14px;    margin: 0 0 18px;    line-height: 16px;    font-size: 11px;    border: 1px solid #d9d9d9;    white-space: pre-wrap;    word-wrap: break-word;}pre code {    background-color: #fff;    color:#737373;    font-size: 11px;    padding: 0;}@media screen and (min-width: 768px) {    body {        width: 748px;        margin:10px auto;    }}</style><style id="custom" type="text/css"></style></head>
+<body><h2>Login.py Readme</h2>
+<h2>关于作者</h2>
+<ul>
+<li>Python菜鸟一枚(Alex 16期首席大弟子)</li>
+<li>作者博客地址<a href="http://www.cnblogs.com/vincenshen/">http://www.cnblogs.com/vincenshen/</a></li>
+</ul>
+<h2>功能特性</h2>
+<ul>
+<li>用户信息通过sqlite3存储</li>
+<li>密码使用hashlib.md5进行加密</li>
+<li>使用getpass模块隐藏用户输入密码时不直接显示在屏幕</li>
+<li>连续三次密码错误，账户将被锁定30分钟，30分钟后自动解锁</li>
+</ul>
+<h2>使用方法及注意事项</h2>
+<h4>运行环境</h4>
+<ul>
+<li>该登录验证程序使用python3.5.2版本编写</li>
+</ul>
+<h4>使用方法</h4>
+<ul>
+<li>使用pyhton + 程序名 运行:<pre><code>   D:\python\day01&gt; python Login.py</code></pre>
+</li>
+<li>程序运行后自动初始化一个用户:'alex' 密码:'tesla'</li>
+<li>登陆成功后打印'Login success, Welcome + 用户名',并退出</li>
+<li>最多可连续尝试登陆三次，超过三次账户将被锁定30分钟(30分钟后自动解锁)，并退出</li>
+</ul>
+<h2>注意事项</h2>
+<ul>
+<li>该登录验证程序使用了<code>getpass</code>模块，所以不支持在pycharm中运行</li>
+</ul>
+<h2>更新日志</h2>
+<ul>
+<li>2017.1.10 1.0 版本</li>
+</ul>
+<h2>License</h2>
+<ul>
+<li>本软件遵循GPL协议
+Edit By <a href="http://mahua.jser.me">MaHua</a></li>
+</ul>
+</body></html>
